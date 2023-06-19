@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Satisfy&display=swap');
+/* ===================================================================================================================================
+                                                GENERAL CSS PROPERTIES
+   ===================================================================================================================================
+ */
+
+ /* COLOR CODE */
+ :root{
+     --dark-blue: #1572A1;
+     --light-blue: #9AD0EC;
+     --white: #F7F7F7;
+     --black: #212121;
+     --youtube: #ff0000;
+     --facebook: #1877f2;
+     --google-plus: #ea4335;
+     --instagram:#e1306c;
+     --linkedin: #0a66c2;
+     --twitter: #1da1f2;
+
+ }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+/* ================================================================================================================
+                        HEADER SECTION
+===================================================================================================================*/
+header{
+  padding-top: 20px;
+  height: 10vh;
+  font-size: medium;
+  background-color: var(--white);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  z-index: 1;
+}
+
+
+.logo-wrapper{
+  height: 100%;
+  font-weight: bold;
+  width: 20%;
+  padding: 20px;
+}
+
+.logo-wrapper a{
+  text-decoration: none;
+  color: black;
+}
+.logo-wrapper a:hover{
+  text-decoration: none;
+  color: var(--light-blue);
+}
+.logo {
+  height: 100%;
+  
+}
+/* ================================================================================================================
+                        MAIN BODY STYLING
+===================================================================================================================*/
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-color: #E6E6FA;
+}
+
+
+/* Form styling */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow:  0px 0px 15px 0px rgb(215, 215, 215);
+  background-color: white;
+ 
+}
+
+.form-wrapper{
+  margin: 30px 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+ margin-top: 20px;
+  color: #7F56D9;
+  
+}
+
+
+form {
+  
+  width: 50%;
+  height: 100%;
+}
+label {
+  font-size: large;
+  
+  color: black;
+}
+input {
+  width: 100%;
+  height: 40px;
+  border: 0.5px solid #c5bfbf;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  border-radius: 7px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+input[type='checkbox'] {
+  padding: 0;
+  border: 0.5px solid #c5bfbf;
+  height: 15px;
+  width: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.form-check-label {
+  font-size: 15px;
+  line-height: 5px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.forgot-password-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 30px;
+}
+
+.forgot-password-container a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--light-blue);
+}
+
+/* Sign in Button */
+
+.sign-in {
+  width: 100%;
+  height: 40px;
+  background-color: #7F56D9;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  border: 0;
+  cursor: pointer;
+  margin: 30px 0px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+}
+
+.sign-in:hover {
+  transform: scale(0.98);
+}
+
+.sign-in:active {
+  transform: scale(0.98);
+}
+.register-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 5px;
+  width: 50%;
+  color: var(--white);
+}
+
+.register-container a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--light-blue);
+  font-style: 'Roboto', san-serif;
+}
+
+
+
+/* ================================================================================================================
+                        FOOTER SECTION
+===================================================================================================================*/
+footer {
+  background: #16222a;
+  background: -webkit-linear-gradient(59deg, #3a6073, #16222a);
+  background: linear-gradient(59deg, #3a6073, #16222a);
+  color: white;
+  margin-top:0 ;
+  margin-bottom: 0;
+  
+}
+
+.footer-content{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+}
+
+/* Copyright Content */
+.copy {
+  font-size: 16px;
+  padding: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.copy hr{
+    border: 1px solid white;
+    margin-left: 5%;
+    width: 100%;
+    align-content: center;
+}
+
+ /*SOCİAL İCONS*/
+
+/* footer social icons */
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 15%;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: var(--facebook);
+}
+
+.social-network a.icoInstagram:hover {
+  background-color: var(--instagram);
+}
+.social-network a.icoYoutube:hover {
+  background-color: var(--youtube);
+}
+.social-network a.icoLinkedin:hover {
+  background-color: var(--linkedin);
+}
+.social-network a.icoTwitter:hover {
+  background-color: var(--twitter);
+}
+.social-network a.icoGoogle:hover {
+  background-color: var(--google-plus);
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoYoutube:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i{
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44bcdd;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #f9f9f9;
+}
