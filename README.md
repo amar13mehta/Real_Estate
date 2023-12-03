@@ -2,8 +2,7 @@
 
 find the hosted project here:- https://amar13mehta.github.io/Real_Estate/
 
-Tech Stack used - Reactjs
-                - Tailwind CSS
+Tech Stack used - Reactjs, Tailwind CSS
 
 Engineered a dynamic real estate website using React.js and Tailwind CSS, seamlessly blending modern design with responsive functionality. Implemented intuitive user interfaces, interactive property listings, and swift navigation. Elevated user experience by combining cutting-edge technologies, ensuring a visually appealing and user-friendly platform for real estate exploration.
 
